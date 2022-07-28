@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "next",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-props-no-spreading": "off"
+  },
+  // To support js and jsx https://gist.github.com/bryantobing12/1b5e13faa81f990f1ae1f08a8d6dcfec
+  "ignorePatterns": ["**/*.js", "**/*.jsx"]
 }
