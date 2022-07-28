@@ -5,10 +5,9 @@ This is a [Complete Next.js Boilerplate](https://github.com/bryantobing12/next-b
 ### 💻 Local testing
 
 - [x] Prettier
-- [ ] Eslint
-- [ ] Commitlint
-- [ ] Husky
-- [ ] Lint Staged
+- [x] Eslint
+- [x] Commitlint with Husky
+- [ ] Lint Staged with Husky
 
 ### 📰 State Management
 
