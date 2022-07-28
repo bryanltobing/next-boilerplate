@@ -4,7 +4,7 @@ This is a [Complete Next.js Boilerplate](https://github.com/bryantobing12/next-b
 
 ### 💻 Local testing
 
-- [ ] Prettier
+- [x] Prettier
 - [ ] Eslint
 - [ ] Commitlint
 - [ ] Husky
