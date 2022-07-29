@@ -7,7 +7,7 @@ This is a [Complete Next.js Boilerplate](https://github.com/bryantobing12/next-b
 - [x] Prettier
 - [x] Eslint
 - [x] Commitlint with Husky
-- [ ] Lint Staged with Husky
+- [x] Lint Staged with Husky
 
 ### 📰 State Management
 
@@ -22,6 +22,7 @@ This is a [Complete Next.js Boilerplate](https://github.com/bryantobing12/next-b
 
 - [ ] Cypress
 - [ ] Component testing / page testing (Haven't decided)
+- [ ] Integration testing
 
 ### 🎌 Localization (i18n)
 
