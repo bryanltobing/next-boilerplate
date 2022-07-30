@@ -30,7 +30,7 @@ NEXT_PUBLIC_API_URL=<your_api_url>
 
 ### 📰 State Management
 
-- [ ] Redux using Redux-Toolkit
+- [x] Redux using Redux-Toolkit
 
 ### 🌠 UI
 
@@ -49,7 +49,7 @@ NEXT_PUBLIC_API_URL=<your_api_url>
 
 ### 🚁 Data Fetching
 
-- [ ] Redux-Toolkit Query
+- [x] Redux-Toolkit Query
 
 ### 💩 Validator
 
