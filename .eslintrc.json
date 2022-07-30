@@ -18,7 +18,8 @@
         "namedComponents": "arrow-function"
       }
     ],
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off"
   },
   // To support js and jsx https://gist.github.com/bryantobing12/1b5e13faa81f990f1ae1f08a8d6dcfec
   "ignorePatterns": ["**/*.js", "**/*.jsx"]

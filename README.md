@@ -1,5 +1,24 @@
 This is a [Complete Next.js Boilerplate](https://github.com/bryantobing12/next-boilerplate) project bootstrapped with many different tech stacks that going to be very opinionated
 
+## GETTING STARTED GUIDE 💥
+
+There are some required steps to do before starting the project
+
+### 1. Setup environment
+
+```bash
+  cp .env.example .env.local
+```
+
+update `.env.local`
+
+```bash
+# this is required
+NEXT_PUBLIC_API_URL=<your_api_url>
+```
+
+### 2. Start the project locally with `pnpm dev`
+
 ## TECH STACK 📟
 
 ### 💻 Local testing
@@ -31,6 +50,11 @@ This is a [Complete Next.js Boilerplate](https://github.com/bryantobing12/next-b
 ### 🚁 Data Fetching
 
 - [ ] Redux-Toolkit Query
+
+### 💩 Validator
+
+- [x] Validating env using zod
+- [ ] Form validator using zod
 
 ## CAVEATS 😥
 
