@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@Definitions": ["Definitions"]
+      "@Definitions": ["src/Definitions"],
+      "@Hooks": ["src/Hooks"],
+      "@Redux": ["src/Redux"],
+      "@ReduxModules": ["src/Redux/Modules"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
