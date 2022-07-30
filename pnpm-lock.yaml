@@ -7,17 +7,11 @@ specifiers:
   '@types/node': 18.6.2
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
-  '@typescript-eslint/eslint-plugin': ^5.13.0
-  '@typescript-eslint/parser': '>=5.0.0 <6.0.0'
   eslint: 8.20.0
   eslint-config-airbnb: ^19.0.4
   eslint-config-airbnb-typescript: ^17.0.0
   eslint-config-next: 12.2.3
   eslint-config-prettier: ^8.5.0
-  eslint-plugin-import: '>=2.25.3 <3.0.0'
-  eslint-plugin-jsx-a11y: ^6.5.1
-  eslint-plugin-react: ^7.28.0
-  eslint-plugin-react-hooks: ^4.3.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
   next: 12.2.3
@@ -35,7 +29,7 @@ dependencies:
   next-redux-wrapper: 7.0.5_fhgeyzrk5acniojoowetxediqa
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-redux: 8.0.2_v7vsrdtui4d36prbwvdnlb7tpq
+  react-redux: 8.0.2_rxpulxqxsibgdk5rs4llgxl6gy
   zod: 3.17.10
 
 devDependencies:
@@ -44,17 +38,11 @@ devDependencies:
   '@types/node': 18.6.2
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
-  '@typescript-eslint/eslint-plugin': 5.31.0_d5zwcxr4bwkhmuo464cb3a2puu
-  '@typescript-eslint/parser': 5.31.0_he2ccbldppg44uulnyq4rwocfa
   eslint: 8.20.0
   eslint-config-airbnb: 19.0.4_ot4ntprzzmtrg3dwojd2mbktke
   eslint-config-airbnb-typescript: 17.0.0_endw7x3nefh3kpkbzaw3wdao5q
   eslint-config-next: 12.2.3_he2ccbldppg44uulnyq4rwocfa
   eslint-config-prettier: 8.5.0_eslint@8.20.0
-  eslint-plugin-import: 2.26.0_ficupzxy3q6nk56ibvavehtzue
-  eslint-plugin-jsx-a11y: 6.6.1_eslint@8.20.0
-  eslint-plugin-react: 7.30.1_eslint@8.20.0
-  eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
   husky: 8.0.1
   lint-staged: 13.0.3
   prettier: 2.7.1
@@ -87,7 +75,7 @@ packages:
     resolution: {integrity: sha512-qZEWeccZCrHA2Au4/X05QW5CMdm4VjUDCrGq5gf1ZDcM4hRqreKrtwAn7yci9zfgAS9apvnsFXiGBHBAxZdK9A==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      core-js-pure: 3.24.0
+      core-js-pure: 3.24.1
       regenerator-runtime: 0.13.9
     dev: true
 
@@ -473,7 +461,7 @@ packages:
     dependencies:
       immer: 9.0.15
       react: 18.2.0
-      react-redux: 8.0.2_v7vsrdtui4d36prbwvdnlb7tpq
+      react-redux: 8.0.2_rxpulxqxsibgdk5rs4llgxl6gy
       redux: 4.2.0
       redux-thunk: 2.4.1_redux@4.2.0
       reselect: 4.1.6
@@ -1028,8 +1016,8 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /core-js-pure/3.24.0:
-    resolution: {integrity: sha512-uzMmW8cRh7uYw4JQtzqvGWRyC2T5+4zipQLQdi2FmiRqP83k3d6F3stv2iAlNhOs6cXN401FCD5TL0vvleuHgA==}
+  /core-js-pure/3.24.1:
+    resolution: {integrity: sha512-r1nJk41QLLPyozHUUPmILCEMtMw24NG4oWK6RbsDdjzQgg9ZvrUsPBj1MnG0wXXp1DCDU6j+wUvEmBSrtRbLXg==}
     requiresBuild: true
     dev: true
 
@@ -2461,7 +2449,7 @@ packages:
     dependencies:
       next: 12.2.3_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
-      react-redux: 8.0.2_v7vsrdtui4d36prbwvdnlb7tpq
+      react-redux: 8.0.2_rxpulxqxsibgdk5rs4llgxl6gy
     dev: false
 
   /next/12.2.3_biqbaboplfbrettd7655fr4n2y:
@@ -2826,7 +2814,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-redux/8.0.2_v7vsrdtui4d36prbwvdnlb7tpq:
+  /react-redux/8.0.2_rxpulxqxsibgdk5rs4llgxl6gy:
     resolution: {integrity: sha512-nBwiscMw3NoP59NFCXFf02f8xdo+vSHT/uZ1ldDwF7XaTpzm+Phk97VT4urYBl5TYAPNVaFm12UHAEyzkpNzRA==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
@@ -2856,6 +2844,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
+      redux: 4.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
