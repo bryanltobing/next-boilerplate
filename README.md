@@ -34,8 +34,8 @@ NEXT_PUBLIC_API_URL=<your_api_url>
 
 ### 🌠 UI
 
-- [ ] Material UI
-- [ ] Vanilla CSS
+- [x] Material UI
+- [x] Vanilla CSS
 
 ### ✅ Testing
 
