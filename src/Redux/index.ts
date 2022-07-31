@@ -1,12 +1,14 @@
+import { configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from "next-redux-wrapper";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
 import { postApi } from "./Modules";
 
 export const makeStore = () =>
   configureStore({
-    reducer: combineReducers({ [postApi.reducerPath]: postApi.reducer }),
+    reducer: {
+      [postApi.reducerPath]: postApi.reducer,
+    },
     middleware: gDM => gDM().concat([postApi.middleware]),
   });
 
