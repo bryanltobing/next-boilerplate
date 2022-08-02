@@ -39,7 +39,7 @@ NEXT_PUBLIC_API_URL=<your_api_url>
 
 ### ✅ Testing
 
-- [ ] Cypress
+- [x] Cypress
 - [ ] Component testing / page testing (Haven't decided)
 - [ ] Integration testing
 

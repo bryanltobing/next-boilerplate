@@ -10,7 +10,9 @@
     "lint:fix": "next lint --fix",
     "type:check": "tsc --noEmit --pretty --incremental false",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run"
   },
   "dependencies": {
     "@emotion/cache": "^11.10.0",
@@ -32,6 +34,7 @@
     "@types/node": "18.6.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "cypress": "^10.3.1",
     "eslint": "8.20.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
