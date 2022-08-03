@@ -45,7 +45,7 @@ NEXT_PUBLIC_API_URL=<your_api_url>
 
 ### 🎌 Localization (i18n)
 
-- [ ] next-i18next (most likely)
+- [x] Default Next.js
 
 ### 🚁 Data Fetching
 

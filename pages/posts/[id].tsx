@@ -34,7 +34,7 @@ const PostDetailsPage: NextPage = () => {
   return (
     <Container>
       <Head>
-        <title>Create Next App</title>
+        <title>Post Details - Next Boilerplate</title>
       </Head>
 
       <Box
@@ -97,8 +97,8 @@ const PostDetailsPage: NextPage = () => {
                 textAlign="left"
                 color="inherit"
                 sx={{
-                  textDecoration: "none",
-                  transition: "color 0.15s ease, border-color 0.15s ease",
+                  "textDecoration": "none",
+                  "transition": "color 0.15s ease, border-color 0.15s ease",
                   ":hover, :focus, :active": {
                     color: "primary.main",
                     borderColor: "primary.main",

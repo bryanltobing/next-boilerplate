@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   useTheme,
   Container,
   Typography,
@@ -12,9 +13,14 @@ import type { NextPage } from "next";
 
 import { useGetPostsQuery } from "@ReduxModules";
 
+import { useTranslation } from "@Hooks";
+
 import { env, DATA_LIMIT } from "@Definitions";
 
 const HomePage: NextPage = () => {
+  const { t, changeLanguage, language } = useTranslation("common");
+  const { t: tGlossary } = useTranslation("glossary");
+
   const { data: posts = [], isLoading } = useGetPostsQuery({
     _limit: DATA_LIMIT,
   });
@@ -24,7 +30,7 @@ const HomePage: NextPage = () => {
   return (
     <Container>
       <Head>
-        <title>Create Next App</title>
+        <title>Home - Next Boilerplate</title>
       </Head>
 
       <Box
@@ -37,11 +43,25 @@ const HomePage: NextPage = () => {
         alignItems="center"
       >
         <Typography variant="h1" textAlign="center">
-          Welcome to{" "}
+          {t.welcome} to{" "}
           <LinkMui href="https://nextjs.org" underline="hover">
             Next.js!
           </LinkMui>
         </Typography>
+
+        <Button
+          variant="contained"
+          sx={{ mt: 2 }}
+          onClick={() => {
+            if (language === "en") {
+              changeLanguage("id");
+            } else {
+              changeLanguage("en");
+            }
+          }}
+        >
+          {tGlossary["toggle-language"]}
+        </Button>
 
         <Typography
           sx={{ my: 8 }}
@@ -85,8 +105,8 @@ const HomePage: NextPage = () => {
                 textAlign="left"
                 color="inherit"
                 sx={{
-                  textDecoration: "none",
-                  transition: "color 0.15s ease, border-color 0.15s ease",
+                  "textDecoration": "none",
+                  "transition": "color 0.15s ease, border-color 0.15s ease",
                   ":hover, :focus, :active": {
                     color: "primary.main",
                     borderColor: "primary.main",
