@@ -13,4 +13,8 @@ export declare namespace ReduxPost {
   interface GetPostsParams {
     _limit: number;
   }
+
+  interface GetPost extends GeneralPost.Post {}
+
+  interface GetPostParams {}
 }
