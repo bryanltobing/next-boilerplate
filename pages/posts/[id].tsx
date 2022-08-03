@@ -9,15 +9,25 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 
-import { useGetPostsQuery } from "@ReduxModules";
+import { useGetPostQuery } from "@ReduxModules";
 
-import { env, DATA_LIMIT } from "@Definitions";
+import { env } from "@Definitions";
 
-const HomePage: NextPage = () => {
-  const { data: posts = [], isLoading } = useGetPostsQuery({
-    _limit: DATA_LIMIT,
-  });
+const PostDetailsPage: NextPage = () => {
+  const router = useRouter();
+
+  const { id = "" } = router.query as { id?: string };
+
+  const { data: post, isLoading } = useGetPostQuery(
+    {
+      id,
+    },
+    {
+      skip: !id,
+    }
+  );
 
   const theme = useTheme();
 
@@ -63,23 +73,25 @@ const HomePage: NextPage = () => {
         </Typography>
 
         <Typography>
-          {isLoading ? "Loading posts" : "Posts loaded"} from{" "}
-          {`${env.NEXT_PUBLIC_API_URL}/posts`}
+          {isLoading ? "Loading post" : "Post loaded"} from{" "}
+          {`${env.NEXT_PUBLIC_API_URL}/posts/${id}`}
         </Typography>
 
-        <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          flexWrap="wrap"
-          maxWidth={800}
-          width={{ xs: "100%", sm: undefined }}
-          flexDirection={{ xs: "column", sm: "row" }}
-        >
-          {posts.map(post => (
+        {post && (
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            flexWrap="wrap"
+            maxWidth={800}
+            width={{ xs: "100%", sm: undefined }}
+            flexDirection={{ xs: "column", sm: "row" }}
+          >
             <Link key={post.id} href={`/posts/${post.id}`} passHref>
               <Box
                 component="a"
+                target="_blank"
+                rel="noreferrer"
                 margin={2}
                 padding={3}
                 textAlign="left"
@@ -103,8 +115,8 @@ const HomePage: NextPage = () => {
                 <Typography variant="body1">{post.body}.</Typography>
               </Box>
             </Link>
-          ))}
-        </Box>
+          </Box>
+        )}
       </Box>
 
       <Box
@@ -134,4 +146,4 @@ const HomePage: NextPage = () => {
   );
 };
 
-export default HomePage;
+export default PostDetailsPage;
